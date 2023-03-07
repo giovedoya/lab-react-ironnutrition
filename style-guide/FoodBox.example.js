@@ -10,7 +10,7 @@ function FoodBox(props) {
     <Col>
       <Card
         title={'FOOD_NAME_HERE'}
-        style={{ width: 230, height: 300, margin: 10 }}
+        style={{ width: 230, height: 350, margin: 10 }}
       >
         <img src={'FOOD_IMAGE_HERE'} height={60} alt="food" />
         <p>Calories: FOOD_CALORIES_HERE</p>

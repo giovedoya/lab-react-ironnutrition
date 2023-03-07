@@ -1,8 +1,8 @@
 import foods from "./foods.json";
 import './App.css';
-import AppI from "./App.example";
 import React, { useState } from "react";
 import { Row, Divider, Button } from 'antd';
+import FoodBox from "./components/FoodBox";
 
 
 
@@ -22,15 +22,8 @@ function App() {
       <Divider>Food List</Divider>
 
       <Row style={{ width: '100%', justifyContent: 'center' }}>
-      {food.map((elem, i) => {
-        return (
-        <div key={i}>
-          <p>{elem.name}</p>
-          <img src={elem.image} alt={elem.name} width={100} />
-          </div>
-          )
-      })}
-      </Row>
+      {foods.map((elem, i) => <FoodBox key={i} food={elem}/>)}    
+      </Row>      
     </div>
   );
 }
